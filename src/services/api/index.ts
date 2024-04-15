@@ -1,5 +1,5 @@
 async function getAllEvents() {
-	const events = await fetch('http://localhost:3333/events', {
+	const events = await fetch('https://simbora-api.onrender.com/events', {
 		headers: {'Content-Type': 'application/json'}
 	});
 	const response = await events.json();
