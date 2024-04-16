@@ -1,3 +1,6 @@
+// Icons
+import { FcGoogle } from "react-icons/fc";
+
 import { Button } from '../../shared/components/button/index';
 import { Input } from '../../shared/components/input/index';
 import * as S from './styles';
@@ -27,10 +30,19 @@ export function Login() {
 						to='#'
 					/>
 				</S.InputContainer>
-				<Button secondary largeSize>
+				<Button primary largeSize>
 					<Link to='/home'>Entrar</Link>
 				</Button>				
+				<Button secondary largeSize icon={<FcGoogle />}>
+					<Link to='/home'>Entrar com o Google</Link>
+				</Button>		
+				<span>Não tem uma conta? <Link to='/register-user'>Cadastre-se!</Link></span>
 			</main>
+			<S.Footer>
+				<div></div>
+				<img src='/images/logo.svg' alt="logo icon" />
+				<div></div>
+			</S.Footer>
 		</S.Container>
 	)
 }

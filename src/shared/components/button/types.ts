@@ -5,7 +5,9 @@ type ButtonProps = {
 	primary?: boolean;
 	secondary?: boolean;
 	tertiary?: boolean;
+	quartenary?: boolean;
 	children: ReactNode;
+	icon?: ReactNode;
 };
 
 export type { ButtonProps };

@@ -10,13 +10,25 @@ export const Button = styled.button<ButtonProps>`
     border: none;
     font-size: 20px;
     border-radius: 5px;
-    background-color: ${props => props.primary ? '#292F36' : '#292F36;'};
-	background-color: ${props => props.secondary ? '#BD1B1E' : '#292F36;'};
-	margin: 0 auto;
-	display: block;
-
+    background-color: ${props => {
+        if(props.primary) return '#292F36'
+        if(props.secondary) return '#BD1B1E'
+        if(props.tertiary) return '#688356'
+        if(props.tertiary) return '#40798C'
+    }};
+	margin: 19px auto;
+	display: flex;
+    justify-content: center;
+    gap: 21px;
+    align-items: center;
+   
 	a {
 		text-decoration: none;
 		color: #fff;
 	}
+
+    svg {
+        height: 33px;
+        width: 33px;
+    }
 `; 
