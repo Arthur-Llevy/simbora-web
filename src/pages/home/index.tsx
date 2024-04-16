@@ -6,19 +6,16 @@ import * as S from './styles';
 
 export function Home() {
 
-	// const [events, setEvents] = useState<EventType[]>([]);
+	const [events, setEvents] = useState<EventType[]>([]);
 
-	// const fethEvents = async () => {
-	// 	const response = await getAllEvents();
-	// 	setEvents(response.events);
-	// };
+	const fethEvents = async () => {
+		const response = await getAllEvents();
+		setEvents(response.events);
+	};
 
-	// useEffect(() => {
-	// 	fethEvents();	
-	// }, [])
-
-	const events = [{id: '1', name: 'event', localization: 'a', type: 'outdoors', startsAt: '15:00', endsAt: '15:00', isFavorited: true}]
-
+	useEffect(() => {
+		fethEvents();	
+	}, [])
 
 	return (
 		<S.HomeContainer>
