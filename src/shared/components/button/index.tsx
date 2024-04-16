@@ -10,7 +10,7 @@ export function Button ({ children, largeSize, primary, secondary, tertiary, qua
 			primary={primary}
 			secondary={secondary}
 			tertiary={tertiary}
-			quartenary={quartenary}
+			quartenary={quartenary}			
 		>	
 			{icon && icon}
 			{children}

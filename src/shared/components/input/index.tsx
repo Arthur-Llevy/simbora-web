@@ -1,12 +1,13 @@
 import { InputProps } from './types';
 import * as S from './styles';
 
-export function Input({ type, placeholder, exceptionText, alternateLinkText, to }: InputProps){
+export function Input({ type, placeholder, exceptionText, alternateLinkText, to, onchange }: InputProps){
 	return (
 		<S.Container>
 			<S.Input 
 				type={type}
 				placeholder={placeholder}
+				onChange={onchange !== undefined ? (e) => onchange(e.target.value) : () => ''}
 		 	/>
 
 		 	{exceptionText !== '' ? (

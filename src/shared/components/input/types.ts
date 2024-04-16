@@ -4,6 +4,7 @@ type InputProps = {
 	exceptionText?: string;
 	alternateLinkText?: string;
 	to?: string; 
+	onchange?: (...args: any) => any
 };
 
 export type { InputProps };
