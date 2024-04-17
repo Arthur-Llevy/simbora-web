@@ -1,3 +1,4 @@
+
 import { EventCard } from '../../components/event-card/';
 import { getAllEvents } from '../../services/api/';
 import { useState, useEffect } from 'react';
@@ -6,7 +7,11 @@ import * as S from './styles';
 
 export function Home() {
 
-	const [events, setEvents] = useState<EventType[]>([]);
+	//const [events, setEvents] = useState<EventType[]>([]);
+
+	const events = [
+		{id: '1', name: 'evento tal', localization: 'Av. Norte', startsAt: '15:00', endsAt: '16:00', isFavorited: true, type: 'outdoors'}
+	]
 
 	const fethEvents = async () => {
 		const response = await getAllEvents();
