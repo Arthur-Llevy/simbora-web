@@ -7,7 +7,7 @@ export function Input({ type, placeholder, exceptionText, alternateLinkText, to,
 			<S.Input 
 				type={type}
 				placeholder={placeholder}
-				onChange={onchange !== undefined ? (e) => onchange(e.target.value) : () => ''}
+				onChange={onchange !== undefined ? (e) => onchange(e.target.value) : () => ''}			
 		 	/>
 
 		 	{exceptionText !== '' ? (

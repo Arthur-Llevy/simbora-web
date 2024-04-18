@@ -3,7 +3,7 @@ type InputProps = {
 	placeholder: string;
 	exceptionText?: string;
 	alternateLinkText?: string;
-	to?: string; 
+	to?: string; 	
 	onchange?: (...args: any) => any
 };
 
