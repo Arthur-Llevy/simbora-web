@@ -12,3 +12,6 @@ export const Button = styled.button`
     color: #000;
 `;
 
+export const Image = styled.img`
+    box-shadow: 1px 3px 4px rgb(0 0 0 / 25%);
+`;
