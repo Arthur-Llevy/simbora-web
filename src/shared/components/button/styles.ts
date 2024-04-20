@@ -14,7 +14,7 @@ export const Button = styled.button<ButtonProps>`
         if(props.primary) return '#292F36'
         if(props.secondary) return '#BD1B1E'
         if(props.tertiary) return '#688356'
-        if(props.tertiary) return '#40798C'
+        if(props.quartenary) return '#40798C'
         return '#FFF'
     }};
 	margin: 19px auto;
