@@ -1,7 +1,7 @@
 import * as S from './styles';
 import { ButtonProps } from './types';
 
-export function Button ({ children, largeSize, primary, secondary, tertiary, quartenary, icon }: ButtonProps) {
+export function Button ({ children, largeSize, primary, secondary, tertiary, quartenary, icon, onclick }: ButtonProps) {
 
 
 	return (
@@ -10,7 +10,8 @@ export function Button ({ children, largeSize, primary, secondary, tertiary, qua
 			primary={primary}
 			secondary={secondary}
 			tertiary={tertiary}
-			quartenary={quartenary}			
+			quartenary={quartenary}		
+			onClick={onclick !== undefined ? onclick : () => ''}	
 		>	
 			{icon && icon}
 			{children}

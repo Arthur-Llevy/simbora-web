@@ -16,6 +16,8 @@ export const EventCardContainer = styled.div<{ type: 'outdoors' | 'games'| 'musi
     max-height: 170px;
     background-color: ${props => types[props.type]};
 
+     
+
 
     main  {
     	display: flex;

@@ -8,6 +8,7 @@ type ButtonProps = {
 	quartenary?: boolean;
 	children: ReactNode;
 	icon?: ReactNode;
+	onclick?: (...args: any) => any;
 };
 
 export type { ButtonProps };

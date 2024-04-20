@@ -5,8 +5,19 @@ import { Button } from '../../shared/components/button/index';
 import { Input } from '../../shared/components/input/index';
 import * as S from './styles';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
+// API
+import { login } from '../../services/api/';
 
 export function Login() {	
+
+	const [email, setEmail] = useState<string>('');	
+	const [password, setPassword] = useState<string>('');
+
+	async function doLogin() {
+		await login(email, password);		
+	}
 
 	return (
 		<S.Container>
@@ -20,6 +31,7 @@ export function Login() {
 						type='email'
 						placeholder='E-mail'
 						exceptionText='Por favor, insira um e-mail válido!'
+						onchange={setEmail}
 					/>
 
 					<Input 
@@ -27,13 +39,14 @@ export function Login() {
 						placeholder='Senha'
 						alternateLinkText='Esqueceu a senha?'
 						to='#'
+						onchange={setPassword}
 					/>
 				</S.InputContainer>
-				<Button primary largeSize>
-					<Link to='/home'>Entrar</Link>
+				<Button primary largeSize  onclick={doLogin}>
+					<Link to='#'>Entrar</Link>
 				</Button>				
 				<Button secondary largeSize icon={<FcGoogle />}>
-					<Link to='/home'>Entrar com o Google</Link>
+					<Link to='#'>Entrar com o Google</Link>
 				</Button>		
 				<span>Não tem uma conta? <Link to='/register-user'>Cadastre-se!</Link></span>
 			</main>

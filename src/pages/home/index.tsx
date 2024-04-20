@@ -8,11 +8,11 @@ import * as S from './styles';
 export function Home() {
 
 	const [events, setEvents] = useState<EventType[]>([]);
-
+	const name = sessionStorage.getItem('name');
 
 	const fethEvents = async () => {
 		const response = await getAllEvents();
-		setEvents(response.events);
+		setEvents(response.data.events);
 	};
 
 	useEffect(() => {
@@ -22,7 +22,7 @@ export function Home() {
 	return (
 		<S.HomeContainer>
 			<S.HomeContainerHeader>
-				<h1>Olá, Arthur</h1>
+				<h1>Olá, { name }</h1>
 				<img src="./images/logo.svg" alt="logo icon"/> 
 			</S.HomeContainerHeader>
 			<main>
@@ -53,6 +53,7 @@ export function Home() {
 							isFavorited={event.isFavorited}
 							endsAt={event.endsAt}
 							type={event.type}
+							linkTo={event.id}
 						/>
 					)) : <>Carregando</>}
 				</S.EventsContainer>

@@ -1,5 +1,6 @@
 import { FaLocationDot, FaRegCalendarDays } from "react-icons/fa6";
 import { FaRegHeart, FaRegUser } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import { AiOutlineHome } from "react-icons/ai";
 import * as S from './styles';
 
@@ -10,19 +11,29 @@ export function Menu(){
                 <S.MenuContainer>
                     <ul>				
                         <li> 
-                            <FaRegCalendarDays color="#fff"/>
+                            <Link to='#'>
+                                <FaRegCalendarDays color="#fff"/>
+                            </Link>
                         </li>
                         <li> 
-                            <FaLocationDot color="#fff" />
+                            <Link to='#'>    
+                                <FaLocationDot color="#fff" />
+                            </Link>
                         </li>
                         <li> 
-                            <AiOutlineHome color="#4EAA5D" />
+                            <Link to='/home'>
+                                <AiOutlineHome color="#4EAA5D" />
+                            </Link>
                         </li>
                         <li> 
-                            <FaRegHeart color="#fff" />
+                            <Link to='#'>
+                                <FaRegHeart color="#fff" />
+                            </Link>
                         </li>
                         <li> 
-                            <FaRegUser color="#fff" />
+                            <Link to='/profile'>
+                                <FaRegUser color="#fff" />
+                            </Link>
                         </li>
                     </ul>
                 </S.MenuContainer>

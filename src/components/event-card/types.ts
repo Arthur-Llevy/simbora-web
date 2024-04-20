@@ -5,6 +5,7 @@ type EventCardProps = {
 	startsAt: string;
 	isFavorited: boolean;
 	endsAt: string
+	linkTo: string;
 };
 
 export type { EventCardProps }
