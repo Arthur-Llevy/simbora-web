@@ -10,8 +10,9 @@ export const InitialPageContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-	width: 352px;
+    width: 80vw;
     margin: 21px 0 0 21px;
+    max-width: 352px;
 
 	p {
 	    color: #6F6C5D;
@@ -34,6 +35,7 @@ export const Main = styled.main`
 export const Header = styled.header`
     display: flex;
     gap: 2px;
+    align-items: center;
     width: 100%;
 `;
 
@@ -48,5 +50,5 @@ export const Image = styled.img`
 
 export const Heading = styled.h1`
 	font-family: "Jockey One", sans-serif;
-    font-size: 70px;
+    font-size: 15vw;
 `;

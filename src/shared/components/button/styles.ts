@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { ButtonProps } from './types';
 
 export const Button = styled.button<ButtonProps>`
-    width: ${props => props.largeSize ? '330px' : '140px'};
+    width: 90%;
+    max-width: ${props => props.largeSize ? '330px' : '140px'};
     height: 45px;
     padding: 10px 0;
     font-weight: bold;
