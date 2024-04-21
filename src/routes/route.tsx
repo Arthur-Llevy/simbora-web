@@ -10,7 +10,7 @@ import { Menu } from '../components/menu';
 
 export const Rts = () => {
 
-	const name  = sessionStorage.getItem('name')
+	const name  = sessionStorage.getItem('userName')
 
 	return (
 		<BrowserRouter>
