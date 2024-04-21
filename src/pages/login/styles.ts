@@ -36,7 +36,7 @@ export const Heading = styled.h1`
 	&::after {    	
 		content: '';
 		display: block;
-		width: 287px;
+		width: 70%;
 		height: 3px;
 		margin: 4px 0 0 -26px;
 		background: linear-gradient(to right, rgb(226 143 86 / 20%), #BA706A, #FA7921);

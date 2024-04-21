@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
     position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 `;
 
 export const Input = styled.input`
-	width: 330px;
+    width: 95%;
+	max-width: 330px;
     height: 60px;
     background: transparent;
     border: 1px solid #887E7E;
