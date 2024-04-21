@@ -1,6 +1,5 @@
 import * as S from './styles';
 import { Button } from '../../shared/components/button/';
-import { useState } from 'react';
 
 // Icons
 import { FaStar } from "react-icons/fa";
