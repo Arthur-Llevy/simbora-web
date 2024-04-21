@@ -1,6 +1,6 @@
 
 import { EventCard } from '../../components/event-card/';
-import { getAllEvents } from '../../services/api/';
+import { getAllEvents } from '../../services/events-api/get-all-events';
 import { useState, useEffect } from 'react';
 import { EventType } from './types';
 import * as S from './styles';
@@ -8,7 +8,7 @@ import * as S from './styles';
 export function Home() {
 
 	const [events, setEvents] = useState<EventType[]>([]);
-	const name = sessionStorage.getItem('name');
+	const name = sessionStorage.getItem('userName');
 
 	const fethEvents = async () => {
 		const response = await getAllEvents();
@@ -25,8 +25,8 @@ export function Home() {
 				<h1>Olá, { name }</h1>
 				<img src="./images/logo.svg" alt="logo icon"/> 
 			</S.HomeContainerHeader>
-			<main>
-				<div>
+			<S.Main>
+				<S.MainHeader>
 					<select>
 				 		<option value="janeiro">Janeiro</option>
 						<option value="fevereiro">Fevereiro</option>
@@ -43,7 +43,7 @@ export function Home() {
 
 					</select>
 					<input placeholder="Pesquisar"/>				
-				</div>
+				</S.MainHeader>
 				<S.EventsContainer>
 					{events.length !== 0 ? events!.map(event => (
 						<EventCard key={event.id}
@@ -57,7 +57,7 @@ export function Home() {
 						/>
 					)) : <>Carregando</>}
 				</S.EventsContainer>
-			</main>
+			</S.Main>
 		</S.HomeContainer>
 	);	
 }

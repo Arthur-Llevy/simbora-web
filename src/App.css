@@ -1,3 +1,8 @@
+html {
+  height: 100vh;
+  background: #F0E9D1;
+}
+
 * {
   margin: 0;
   padding: 0;

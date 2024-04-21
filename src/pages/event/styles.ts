@@ -25,6 +25,11 @@ export const Button = styled.button`
     justify-content: center;
     gap: 21px;
     align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 `;
 
 

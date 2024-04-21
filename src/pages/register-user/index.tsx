@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 // API
-import { registerUser } from '../../services/api/';
+import { registerUser } from '../../services/events-api/register-user';
  
 
 export function RegisterUser() {

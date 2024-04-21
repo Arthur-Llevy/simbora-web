@@ -1,18 +1,22 @@
 import * as S from './styles';
-import { Button } from '../../shared/components/button/'
+import { Button } from '../../shared/components/button/';
+import { useState } from 'react';
 
 // Icons
 import { FaStar } from "react-icons/fa";
 
 export function Profile(){
+
+    const { userName, eventsAttended, eventsCreated } = sessionStorage
+
     return (
         <S.ProfileContainer>
             <S.Header>
                 <S.Image src='/images/profile.svg' />
                 <S.Section>
-                    <S.Name>Arthur</S.Name>
-                    <S.Span>Eventos Participados: 2</S.Span>
-                    <S.Span>Eventos Criados: 5</S.Span>
+                    <S.Name>{userName}</S.Name>
+                    <S.Span>Eventos Participados: {eventsAttended}</S.Span>
+                    <S.Span>Eventos Criados: {eventsCreated}</S.Span>
                     <S.StarsContainer>
                         <FaStar color='#FAE20A'/>
                         <FaStar color='#FAE20A'/>

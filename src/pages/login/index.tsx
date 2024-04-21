@@ -8,9 +8,10 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 // API
-import { login } from '../../services/api/';
+import { login } from '../../services/events-api/login';
 
 export function Login() {	
+
 
 	const [email, setEmail] = useState<string>('');	
 	const [password, setPassword] = useState<string>('');

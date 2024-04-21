@@ -19,8 +19,8 @@ export const Rts = () => {
 				<Route path="/home" element={name !== null ? <Home /> :  <Login />}/>
 				<Route path="/login" element={<Login />} /> 
 				<Route path="/register-user" element={<RegisterUser />} /> 
-				<Route path="/event" element={<Event />} /> 
-				<Route path="/profile" element={<Profile />} /> 
+				<Route path="/events/:id" element={<Event />} /> 
+				<Route path="/profile" element={name !== null ? <Profile /> :  <Login />} /> 
 			</Routes>
 			<Menu />
 		</BrowserRouter>
