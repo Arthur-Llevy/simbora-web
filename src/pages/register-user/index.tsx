@@ -33,12 +33,16 @@ export function RegisterUser() {
 						onchange={setName}
 					/>
 					<Input 
+						type='tel'
+						placeholder='Telefone'
+						onchange={setEmail}
+					/>
+					<Input 
 						type='email'
 						placeholder='E-mail'
 						exceptionText='Por favor, insira um e-mail válido!'
 						onchange={setEmail}
 					/>
-
 					<Input 
 						type='password'
 						placeholder='Senha'
