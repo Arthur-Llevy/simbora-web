@@ -21,6 +21,7 @@ async function login(email: string, password: string){
 	sessionStorage.setItem('endsAt', await response.data.user.endsAt);
 	sessionStorage.setItem('eventsAttended', await response.data.user.eventsAttended);
 	sessionStorage.setItem('eventsCreated', await response.data.user.eventsCreated);
+	sessionStorage.setItem('phone', await response.data.user.phone);
 
 
 	return window.location.href = '/home';

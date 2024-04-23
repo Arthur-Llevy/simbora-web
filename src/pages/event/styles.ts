@@ -61,6 +61,12 @@ export const Header = styled.header`
     }
 `;
 
+export const Image = styled.img`
+    display: block;
+    margin: 26px auto;
+    width: 90%;
+`;
+
 export const Section = styled.section`
     display: flex;
     justify-content: space-around;

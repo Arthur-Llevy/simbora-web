@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa";
 
 export function Profile(){
 
-    const { userName, eventsAttended, eventsCreated } = sessionStorage
+    const { userName, eventsAttended, eventsCreated, email, phone } = sessionStorage
 
     return (
         <S.ProfileContainer>
@@ -29,15 +29,15 @@ export function Profile(){
                 <S.Title>Informações de contato</S.Title>
                 <S.InputContainer>
                     <S.Label htmlFor='name'>Nome</S.Label>
-                    <S.Input type='text' placeholder='Arthur' id='name'/>
+                    <S.Input type='text' placeholder={userName} id='name' value={userName} disabled/>
                 </S.InputContainer>
                 <S.InputContainer>
                     <S.Label htmlFor='email'>E-mail</S.Label>
-                    <S.Input type='email' placeholder='arthur@gmail.com' id='name' disabled/>
+                    <S.Input type='email' placeholder={email} id='name' value={email} disabled/>
                 </S.InputContainer>
                 <S.InputContainer>
                     <S.Label htmlFor='tel'>Telefone</S.Label>
-                    <S.Input type='tel' placeholder='(81) 9 9999-9999' id='tel' disabled/>
+                    <S.Input type='tel' placeholder={phone} id='tel' value={phone} disabled/>
                 </S.InputContainer>
                 <S.InputContainer>
                     <S.Label>Preferências</S.Label>

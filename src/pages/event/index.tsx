@@ -52,6 +52,7 @@ export function Event(){
                     <HiBellAlert />
                     <IoIosShareAlt />
                 </S.Header>
+                <S.Image src='/images/event-photo.svg'/>
                 <S.LocalizationSection>
                     <FaLocationDot size='15px' color='rgb(0 0 0 / 73%)'/>
                     <S.Localization>
