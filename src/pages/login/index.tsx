@@ -43,12 +43,14 @@ export function Login() {
 						onchange={setPassword}
 					/>
 				</S.InputContainer>
-				<Button primary largeSize  onclick={doLogin}>
-					<Link to='#'>Entrar</Link>
-				</Button>				
-				<Button secondary largeSize icon={<FcGoogle />}>
-					<Link to='#'>Entrar com o Google</Link>
-				</Button>		
+				<S.ButtonContainer>
+					<Button primary largeSize  onclick={doLogin}>
+						<Link to='#'>Entrar</Link>
+					</Button>				
+					<Button secondary largeSize icon={<FcGoogle />}>
+						<Link to='#'>Entrar com o Google</Link>
+					</Button>		
+				</S.ButtonContainer>
 				<span>Não tem uma conta? <Link to='/register-user'>Cadastre-se!</Link></span>
 			</main>
 			<S.Footer>

@@ -5,11 +5,11 @@ export const Container = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: auto;
 `;
 
 export const Input = styled.input`
-    width: 95%;
+    width: 90vw;
 	max-width: 330px;
     height: 60px;
     background: transparent;
@@ -45,7 +45,6 @@ export const LinkTo = styled(Link)`
     color: #635C5C;
     font-size: 16px;
     font-weight: bold;
-    text-decoration: none;
     position: absolute;
     inset: 63px 0 0 180px;
 `

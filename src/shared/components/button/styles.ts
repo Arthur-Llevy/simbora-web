@@ -9,7 +9,7 @@ export const Button = styled.button<ButtonProps>`
     font-weight: bold;
     color: #fff;    
     border: none;
-    font-size: 20px;
+    font-size: 5vw;
     border-radius: 5px;
     background-color: ${props => {
         if(props.primary) return '#292F36'

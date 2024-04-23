@@ -51,6 +51,9 @@ export const InputContainer = styled.div`
     align-items: center;   
 `;
 
+export const ButtonContainer = styled.div`
+`;
+
 export const Footer = styled.footer`
 
 	display: flex;
