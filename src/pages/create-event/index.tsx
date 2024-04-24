@@ -5,7 +5,7 @@ import { Button } from '../../shared/components/button';
 
 export function CreateEvent(){
 
-    const { userName, eventsAttended, eventsCreated, email, phone } = sessionStorage
+    const { userName, eventsAttended, eventsCreated } = sessionStorage
 
     return (
         <S.CreateEventContainer>
