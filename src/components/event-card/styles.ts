@@ -7,7 +7,7 @@ const types = {
 }
 
 export const EventCardContainer = styled.div<{ type: 'outdoors' | 'games'| 'music' }>`
-	border-radius: 60px;
+	border-radius: 70px;
     width: 98%;
     display: flex;
     height: auto;
@@ -15,9 +15,7 @@ export const EventCardContainer = styled.div<{ type: 'outdoors' | 'games'| 'musi
     max-width: 400px;
     max-height: 170px;
     background-color: ${props => types[props.type]};
-
-     
-
+    box-shadow: 1px 3px 4px rgb(0 0 0 / 25%);
 
     main  {
     	display: flex;

@@ -7,11 +7,11 @@ async function login(email: string, password: string){
 	);
 
 	if (response.data.status === 401){
-		return window.location.href = '/login'
+		return 
 	} 
 
 	if (response.data.status === 404){
-		return window.location.href = '/login'
+		return
 	} 
 
 	sessionStorage.setItem('email', await response.data.user.email);

@@ -5,11 +5,11 @@ export const Container = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: auto;
 `;
 
 export const Input = styled.input`
-    width: 95%;
+    width: 87vw;
 	max-width: 330px;
     height: 60px;
     background: transparent;
