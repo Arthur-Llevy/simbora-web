@@ -6,6 +6,9 @@ import { Login } from '../pages/login/';
 import { InitialPage } from '../pages/initial-page/';
 import { Event } from '../pages/event/';
 import { Profile } from '../pages/profile/';
+import { CreateEvent } from '../pages/create-event/';
+
+// Components
 import { Menu } from '../components/menu';
 
 export const Rts = () => {
@@ -21,6 +24,7 @@ export const Rts = () => {
 				<Route path="/register-user" element={<RegisterUser />} /> 
 				<Route path="/events/:id" element={<Event />} /> 
 				<Route path="/profile" element={name !== null ? <Profile /> :  <Login />} /> 
+				<Route path="/create-event" element={name !== null ? <CreateEvent /> :  <Login />} /> 
 			</Routes>
 			<Menu />
 		</BrowserRouter>

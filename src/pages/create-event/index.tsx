@@ -1,15 +1,14 @@
 import * as S from './styles';
-import { Button } from '../../shared/components/button/';
-
-// Icons
 import { FaStar } from "react-icons/fa";
 
-export function Profile(){
+import { Button } from '../../shared/components/button';
 
-    const { userName, eventsAttended, eventsCreated, email, phone } = sessionStorage;
+export function CreateEvent(){
+
+    const { userName, eventsAttended, eventsCreated, email, phone } = sessionStorage
 
     return (
-        <S.ProfileContainer>
+        <S.CreateEventContainer>
             <S.Header>
                 <S.Image src='/images/profile.svg' />
                 <S.Section>
@@ -26,25 +25,25 @@ export function Profile(){
                 </S.Section>
             </S.Header>
             <S.Main>
-                <S.Title>Informações de contato</S.Title>
+                <S.Title>Informações do evento</S.Title>
                 <S.InputContainer>
                     <S.Label htmlFor='name'>Nome</S.Label>
-                    <S.Input type='text' placeholder={userName} id='name' value={userName} disabled/>
+                    <S.Input type='text' placeholder='Ex.: campeonato de xadrez' id='name'/>
                 </S.InputContainer>
                 <S.InputContainer>
-                    <S.Label htmlFor='email'>E-mail</S.Label>
-                    <S.Input type='email' placeholder={email} id='name' value={email} disabled/>
+                    <S.Label htmlFor='localization'>Local</S.Label>
+                    <S.Input type='text' placeholder='Ex.: Avenida Boa Viagem' id='localization'/>
                 </S.InputContainer>
                 <S.InputContainer>
-                    <S.Label htmlFor='tel'>Telefone</S.Label>
-                    <S.Input type='tel' placeholder={phone} id='tel' value={phone} disabled/>
+                    <S.Label htmlFor='attendeeAmmount'>Número máximo de participantes</S.Label>
+                    <S.Input type='number' placeholder='Ex.: 50' id='attendeeAmmount'/>
                 </S.InputContainer>
                 <S.InputContainer>
-                    <S.Label>Preferências</S.Label>
-                    <S.Preference>Jogos</S.Preference>
+                    <S.Label htmlFor='genres'>Gêneros</S.Label>
+                    <S.Input type='text' placeholder='Ex.: jogos, música' id='genres'/>
                 </S.InputContainer>
-                <Button quartenary>Editar</Button>
+                <Button tertiary>Criar evento</Button>
             </S.Main>
-        </S.ProfileContainer>
-    );
+        </S.CreateEventContainer>
+    )
 }
