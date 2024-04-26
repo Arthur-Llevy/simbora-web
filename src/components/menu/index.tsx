@@ -1,7 +1,9 @@
-import { FaLocationDot, FaRegCalendarDays } from "react-icons/fa6";
-import { FaRegHeart, FaRegUser } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { IoLocationOutline } from "react-icons/io5";
 import { AiOutlineHome } from "react-icons/ai";
+import { IoAddCircleOutline, IoFolderOpenOutline   } from "react-icons/io5";
+
 import * as S from './styles';
 
 export function Menu(){
@@ -12,12 +14,12 @@ export function Menu(){
                     <ul>				
                         <li> 
                             <Link to='#'>
-                                <FaRegCalendarDays color="#fff"/>
+                                <IoFolderOpenOutline color="#fff"/>
                             </Link>
                         </li>
                         <li> 
                             <Link to='#'>    
-                                <FaLocationDot color="#fff" />
+                                <IoLocationOutline color="#fff" />
                             </Link>
                         </li>
                         <li> 
@@ -26,8 +28,8 @@ export function Menu(){
                             </Link>
                         </li>
                         <li> 
-                            <Link to='#'>
-                                <FaRegHeart color="#fff" />
+                            <Link to='/create-event'>
+                                <IoAddCircleOutline color="#fff" />
                             </Link>
                         </li>
                         <li> 
