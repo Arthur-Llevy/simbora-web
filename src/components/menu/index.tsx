@@ -13,7 +13,7 @@ export function Menu(){
                 <S.MenuContainer>
                     <ul>				
                         <li> 
-                            <Link to='#'>
+                            <Link to='/my-events'>
                                 <IoFolderOpenOutline color="#fff"/>
                             </Link>
                         </li>

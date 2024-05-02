@@ -7,9 +7,7 @@ import { InitialPage } from '../pages/initial-page/';
 import { Event } from '../pages/event/';
 import { Profile } from '../pages/profile/';
 import { CreateEvent } from '../pages/create-event/';
-
-// Components
-import { Menu } from '../components/menu';
+import { MyEvents } from '../pages/my-events/';
 
 export const Rts = () => {
 
@@ -25,8 +23,8 @@ export const Rts = () => {
 				<Route path="/events/:id" element={<Event />} /> 
 				<Route path="/profile" element={name !== null ? <Profile /> :  <Login />} /> 
 				<Route path="/create-event" element={name !== null ? <CreateEvent /> :  <Login />} /> 
+				<Route path="/my-events" element={name !== null ? <MyEvents /> :  <Login />} /> 
 			</Routes>
-			<Menu />
 		</BrowserRouter>
 	);
 }

@@ -1,7 +1,8 @@
 import * as S from './styles';
-import { Button } from '../../shared/components/button/';
 
-// Icons
+// Components
+import { Button } from '../../shared/components/button/';
+import { Menu } from '../../components/menu/';
 import { FaStar } from "react-icons/fa";
 
 export function Profile(){
@@ -45,6 +46,7 @@ export function Profile(){
                 </S.InputContainer>
                 <Button quartenary>Editar</Button>
             </S.Main>
+            <Menu />
         </S.ProfileContainer>
     );
 }

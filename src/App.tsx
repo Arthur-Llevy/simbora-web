@@ -1,13 +1,16 @@
 import './App.css'
 import { Rts } from './routes/route';
 import { GlobalStyle } from './globalStyles';
+import { UserDataProvider } from './context/UserDataContext';
 
 function App() {
 
   return (
     <>
-       <Rts />
-       <GlobalStyle />
+      <UserDataProvider>
+         <Rts />
+         <GlobalStyle />
+      </UserDataProvider>
     </>
   )
 }

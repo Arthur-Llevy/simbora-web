@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const CreateEventContainer = styled.div`
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
     background: #F0E9D1;
 `;
 
@@ -54,7 +56,8 @@ export const Section = styled.section`
 `;
 
 export const Main = styled.main`
-    margin: 35px 0 0 23px;
+    margin: 35px 0 35px 23px;
+    overflow: scroll;
 `;
 
 export const Title = styled.h1`

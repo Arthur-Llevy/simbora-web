@@ -1,14 +1,18 @@
 import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
-	background: #F0E9D1;
-	width: 100vw;
-	height: auto;
-	display: flex;
-	flex-direction: column;
+    background: #F0E9D1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const Main = styled.main`
+
+    height: 100%;
+    overflow: scroll;
+    
 	div {
 		display: flex;
 		justify-content: space-evenly;

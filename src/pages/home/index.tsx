@@ -1,28 +1,41 @@
-
+// Components
 import { EventCard } from '../../components/event-card/';
+import { Menu } from '../../components/menu/';
+
+// API
 import { getAllEvents } from '../../services/events-api/get-all-events';
-import { useState, useEffect } from 'react';
+import { getUserData } from '../../services/events-api/get-user-data';
+
+import { useState, useEffect, useContext } from 'react';
+import { UserDataContext } from '../../context/UserDataContext';
 import { EventType } from './types';
 import * as S from './styles';
 
 export function Home() {
 
 	const [events, setEvents] = useState<EventType[]>([]);
-	const name = sessionStorage.getItem('userName');
+	const { userName } = sessionStorage;
+	const { userData } = useContext(UserDataContext);
 
 	const fethEvents = async () => {
 		const response = await getAllEvents();
 		setEvents(response.data.events);
 	};
 
+	const fetchUserData = async () => {
+		const response = await getUserData(sessionStorage.getItem('email')!, sessionStorage.getItem('password')!)
+		userData.user = response
+	};	
+
 	useEffect(() => {
 		fethEvents();	
+		fetchUserData()
 	}, [])
 
 	return (
 		<S.HomeContainer>
 			<S.HomeContainerHeader>
-				<h1>Olá, { name }</h1>
+				<h1>Olá, { userName }</h1>
 				<img src="./images/logo.svg" alt="logo icon"/> 
 			</S.HomeContainerHeader>
 			<S.Main>
@@ -58,6 +71,7 @@ export function Home() {
 					)) : <>Carregando</>}
 				</S.EventsContainer>
 			</S.Main>
+			<Menu />
 		</S.HomeContainer>
 	);	
 }
