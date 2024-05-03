@@ -20,6 +20,27 @@ Back-end: <br>
 Acesse o repositório do back-end clicando [aqui](https://github.com/Arthur-Llevy/simbora-api) <br><br>
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)  ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) <br>
  ![Fastify](https://img.shields.io/badge/fastify-%23000000.svg?style=for-the-badge&logo=fastify&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+
+## Como rodar o projeto?
+1. Baixe o projeto em sua máquina com o seguinte comando
+```bash
+ git clone git@github.com:Arthur-Llevy/simbora-web.git
+```
+
+2. Vá para a pasta do projeto
+```bash
+ cd simbora-web/
+```
+
+3. Baixe as depedências
+```bash
+ npm i
+```
+
+4. Inicie o projeto
+```bash
+ npm run dev
+```
  
 É isso, obrigado!
 
