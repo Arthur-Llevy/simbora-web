@@ -41,6 +41,9 @@ Acesse o repositório do back-end clicando [aqui](https://github.com/Arthur-Llev
 ```bash
  npm run dev
 ```
+
+5. Acesse o link: [http://localhost:5173/](http://localhost:5173/)
+Pronto, tudo funcionando!
  
 É isso, obrigado!
 
@@ -69,5 +72,28 @@ Back-end: <br>
 Access the back-end repository by clicking [here](https://github.com/Arthur-Llevy/simbora-api) <br><br>
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)  ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) <br>
  ![Fastify](https://img.shields.io/badge/fastify-%23000000.svg?style=for-the-badge&logo=fastify&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+
+ 1. Download the project to your machine with the following command
+```bash
+ git clone git@github.com:Arthur-Llevy/simbora-web.git
+```
+
+2. Go to the project folder
+```bash
+ cd simbora-web/
+```
+
+3. Download the dependencies
+```bash
+ npm i
+```
+
+4. Start the project
+```bash
+ npm run dev
+```
+
+5. Go to the link: [http://localhost:5173/](http://localhost:5173/)
+That's it, you're up and running!
 
 That's it, thank you!
