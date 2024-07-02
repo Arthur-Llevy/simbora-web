@@ -8,8 +8,10 @@ function App() {
   return (
     <>
       <UserDataProvider>
-         <Rts />
-         <GlobalStyle />
+        <div className="Container">
+          <Rts />
+          <GlobalStyle />
+        </div>
       </UserDataProvider>
     </>
   )

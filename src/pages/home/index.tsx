@@ -1,6 +1,5 @@
 // Components
 import { EventCard } from '../../components/event-card/';
-import { Menu } from '../../components/menu/';
 
 // API
 import { getAllEvents } from '../../services/events-api/get-all-events';
@@ -76,7 +75,6 @@ export function Home() {
                     )) : <>Carregando</>}
                 </S.EventsContainer>
             </S.Main>
-            <Menu />
         </S.HomeContainer>
     );
 }

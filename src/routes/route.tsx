@@ -9,6 +9,10 @@ import { Profile } from '../pages/profile/';
 import { CreateEvent } from '../pages/create-event/';
 import { MyEvents } from '../pages/my-events/';
 
+
+// Components
+import { Menu } from '../components/menu/'; 
+
 export const Rts = () => {
 
 	//const name  = sessionStorage.getItem('userName')
@@ -25,6 +29,7 @@ export const Rts = () => {
 				<Route path="/create-event" element={1===1 ? <CreateEvent /> :  <Login />} /> 
 				<Route path="/my-events" element={1===1 ? <MyEvents /> :  <Login />} /> 
 			</Routes>
+			<Menu />
 		</BrowserRouter>
 	);
 }

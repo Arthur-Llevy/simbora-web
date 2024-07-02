@@ -14,8 +14,8 @@ function MenuPopup({ ref }: { ref: MutableRefObject<HTMLDivElement | null> }) {
         <S.MenuPopupContainer ref={ref}>
             <ul>
                 <li><Link to="/profile"><FaRegUser /></Link></li>
-                <li><FaRegFolderOpen /></li>
-                <li><IoAddOutline /></li>
+                <li><Link to="/my-events"><FaRegFolderOpen /></Link></li>
+                <li><Link to="/create-event"><IoAddOutline /></Link></li>
             </ul>
         </S.MenuPopupContainer>
     );
@@ -40,12 +40,12 @@ export function Menu(){
                 <S.MenuContainer>
                     <ul>				
                         <li> 
-                            <Link to='/my-events'>
+                            <Link to='#'>
                                 <CiCalendar color="#fff"/>
                             </Link>
                         </li>
                         <li> 
-                            <Link to='#'>    
+                            <Link to='/events-by-location'>    
                                 <IoLocationOutline color="#fff" />
                             </Link>
                         </li>
@@ -55,14 +55,12 @@ export function Menu(){
                             </Link>
                         </li>
                         <li> 
-                            <Link to='/create-event'>
+                            <Link to='/my-events'>
                                 <FaRegHeart color="#fff" />
                             </Link>
                         </li>
                         <li> 
-                            <Link to='#' onClick={toggleMenu}>
-                                <MdMoreHoriz color="#fff" />
-                            </Link>
+                            <MdMoreHoriz color="#fff" onClick={toggleMenu}/>
                             {isMenuPopupVisible && <MenuPopup ref={menuPopupRef}/>}
                         </li>
                     </ul>

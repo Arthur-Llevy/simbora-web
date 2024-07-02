@@ -4,7 +4,6 @@ import { createEvent } from '../../services/events-api/create-event';
 import { useState } from 'react';
 
 import { Button } from '../../shared/components/button';
-import { Menu } from '../../components/menu/';
 
 export function CreateEvent(){
 
@@ -103,7 +102,6 @@ export function CreateEvent(){
                 </S.InputContainer>
                 <Button tertiary onclick={create}>Criar evento</Button>
             </S.Main>
-            <Menu />
         </S.CreateEventContainer>
     )
 }
