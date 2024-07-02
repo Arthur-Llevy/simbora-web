@@ -17,13 +17,13 @@ export const Rts = () => {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<InitialPage />} /> 
-				<Route path="/home" element={name !== null ? <Home /> :  <Login />}/>
+				<Route path="/home" element={1===1 ? <Home /> :  <Login />}/>
 				<Route path="/login" element={<Login />} /> 
 				<Route path="/register-user" element={<RegisterUser />} /> 
 				<Route path="/events/:id" element={<Event />} /> 
-				<Route path="/profile" element={name !== null ? <Profile /> :  <Login />} /> 
-				<Route path="/create-event" element={name !== null ? <CreateEvent /> :  <Login />} /> 
-				<Route path="/my-events" element={name !== null ? <MyEvents /> :  <Login />} /> 
+				<Route path="/profile" element={1===1 ? <Profile /> :  <Login />} /> 
+				<Route path="/create-event" element={1===1 ? <CreateEvent /> :  <Login />} /> 
+				<Route path="/my-events" element={1===1 ? <MyEvents /> :  <Login />} /> 
 			</Routes>
 		</BrowserRouter>
 	);

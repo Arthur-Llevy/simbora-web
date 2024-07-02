@@ -7,8 +7,9 @@ const types = {
 }
 
 export const EventCardContainer = styled.div<{ type: 'outdoors' | 'games'| 'music' }>`
-	border-radius: 70px;
-    width: 98%;
+	border-radius: 10px;
+    width: 95%;
+    max-width: 344px;
     display: flex;
     height: auto;
     flex-direction: column;
