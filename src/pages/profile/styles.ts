@@ -3,10 +3,9 @@ import styled from 'styled-components';
 export const ProfileContainer = styled.div`
     height: 100vh;
     width: 100vw;
-    background: #F0E9D1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    background: #F0E9D1;
 `;
 
 export const Header = styled.header`

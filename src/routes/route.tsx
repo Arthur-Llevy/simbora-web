@@ -11,7 +11,7 @@ import { MyEvents } from '../pages/my-events/';
 
 export const Rts = () => {
 
-	const name  = sessionStorage.getItem('userName')
+	//const name  = sessionStorage.getItem('userName')
 
 	return (
 		<BrowserRouter>

@@ -13,7 +13,7 @@ function MenuPopup({ ref }: { ref: MutableRefObject<HTMLDivElement | null> }) {
     return (
         <S.MenuPopupContainer ref={ref}>
             <ul>
-                <li><FaRegUser /></li>
+                <li><Link to="/profile"><FaRegUser /></Link></li>
                 <li><FaRegFolderOpen /></li>
                 <li><IoAddOutline /></li>
             </ul>
@@ -23,7 +23,7 @@ function MenuPopup({ ref }: { ref: MutableRefObject<HTMLDivElement | null> }) {
 
 export function Menu(){
 
-    const menuPopupRef = useRef(null);
+    const menuPopupRef = useRef<HTMLDivElement>(null);
     const [isMenuPopupVisible, setIsMenuPopupVisible] = useState<boolean>(false);
 
     const toggleMenu = () => {
