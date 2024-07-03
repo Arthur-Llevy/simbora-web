@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import backgroundOne from '/images/background-one.svg';
 
 // Components
-import { Menu } from '../../components/menu/'; 
 
 const Card = () => {
 	return (
